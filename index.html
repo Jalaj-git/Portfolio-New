@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince J - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                  <span class="typed-intro"></span>
+                  <span class="highlight typed-name"></span>
+                </h1>
+                <p class="subtitle typed-description">A passionate web developer crafting beautiful digital experiences</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                </div>
+            </div>
+            <a href="#projects" class="scroll-indicator">↓</a>
+        </section>
+
+        <section id="projects" class="projects hidden">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be added dynamically via JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact hidden">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message (max 250 words)" required maxlength="1500"></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button class="scroll-up" aria-label="Scroll to top">↑</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Prince J. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
